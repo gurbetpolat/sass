@@ -1,0 +1,62 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.kutu, body .container .box2, body .container .box1 {
+  height: 200px;
+  width: 200px;
+  background-color: #ff3838;
+  float: left;
+  margin-right: 10px;
+}
+
+body {
+  background-color: bisque;
+}
+body .container {
+  height: 1000px;
+  width: 900px;
+  margin: 0px auto;
+  background-color: #67e6dc;
+}
+body .container header {
+  height: 80px;
+  width: 900px;
+  background-color: #ff3838;
+}
+body .container header ul li {
+  float: left;
+}
+body .container header ul li a {
+  display: block;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  width: 180px;
+  text-decoration: none;
+  font-size: 25px;
+  color: bisque;
+}
+body .container header ul li a:hover {
+  color: #7d5fff;
+}
+body .container .kutular {
+  height: 400px;
+  width: 600px;
+  margin: 0px auto;
+  background-color: #7d5fff;
+  margin-top: 50px;
+}
+body .container .box1 {
+  margin-top: 10px;
+  border-width: 5px;
+  border-style: dashed;
+  border-color: yellow;
+}
+body .container .box2 {
+  border-width: 5px;
+  border-style: solid;
+  border-color: rgb(255, 94, 0);
+}/*# sourceMappingURL=main.css.map */

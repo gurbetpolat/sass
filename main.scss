@@ -1,0 +1,87 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+$ana-renk: bisque;
+$header: #ff3838;
+$kutu: #7d5fff;
+$cerceve: #67e6dc;
+
+@mixin border($genislik,$tipi,$renk) {
+
+    border-width: $genislik;
+    border-style: $tipi;
+    border-color: $renk;
+    
+}
+
+.kutu{
+    height: 200px;
+    width: 200px;
+    background-color: $header;
+    float: left;
+    margin-right: 10px;
+}
+
+
+
+body {
+    background-color: $ana-renk;
+
+    .container {
+        height: 1000px;
+        width: 900px;
+        margin: 0px auto;
+        background-color: $cerceve;
+
+        header {
+            height: 80px;
+            width: 900px;
+            background-color: $header;
+
+            ul {
+
+
+                li {
+                    float: left;
+
+                    a {
+                        display: block;
+                        height: 60px;
+                        line-height: 60px;
+                        text-align: center;
+                        width: 180px;
+                        text-decoration: none;
+                        font-size: 25px;
+                        color:$ana-renk;
+
+                        &:hover{
+                            color:$kutu;
+                        }
+                    }
+                }
+            }
+        }
+
+        .kutular{
+            height: 400px;
+            width: 600px;
+            margin: 0px auto;
+            background-color: $kutu;
+            margin-top: 50px;
+        }
+
+        .box1{
+            margin-top: 10px;
+            @extend .kutu;
+            @include border(5px,dashed ,yellow );
+        }
+        .box2{
+            @extend .kutu;
+            @include border(5px,solid,rgb(255, 94, 0) )
+        }
+    }
+
+}
